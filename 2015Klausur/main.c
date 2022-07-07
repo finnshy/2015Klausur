@@ -53,8 +53,10 @@ void tabelleBerechnen(double result[4][101], double c, double r, double u, doubl
 }
 
 void tabelleAusgeben(double result[4][101]) {
+	printf("Zeit:\t|UR\t|UC\t|Strom\n");
 	for (int i = 0; i < 101; i++)
 	{
-		printf("Zeit:%lf, UR:%lf, UC:%lf, I:%lf\n", result[0][i], result[1][i], result[2][i], result[3][i]);
+		
+		printf("%lf|%lf|%lf|%lf\n", result[0][i], result[1][i], result[2][i], result[3][i]);
 	}
 }
